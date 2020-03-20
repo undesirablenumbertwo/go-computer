@@ -1,0 +1,15 @@
+{
+  "name": "go-computer",
+  "main": "index.html",
+  "single-instance": true,
+  "window": {
+    "position": "center",
+    "width": 1280,
+    "height": 720,
+    "frame" : true
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "version": "0.1.0"
+}

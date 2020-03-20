@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import "github.com/dtylman/gowd"
+
+func check(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
 
 func main() {
-	fmt.Println("Hello, World!")
+	body, err := gowd.ParseElement("<h1>Hello World!</h1>", nil)
+	check(err)
+	gowd.Run(body)
 }
